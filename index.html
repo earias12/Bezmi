@@ -1,61 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bezmi - Empresa de Software</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Bezmi Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Inicio</a></li>
-                <li><a href="#about">Sobre Nosotros</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="images/Bezmi-yellow.png" alt="Bezmi Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#home">Inicio</a></li>
+                    <li><a href="#about">Sobre Nosotros</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
     <main>
-        <section id="home">
-            <h1>Bienvenido a Bezmi</h1>
-            <p>Ofrecemos soluciones de software personalizadas para tu negocio.</p>
+        <section id="home" class="hero">
+            <div class="container">
+                <h1>Bienvenido a Bezmi</h1>
+                <p>Transformamos ideas en soluciones digitales innovadoras.</p>
+                <a href="#contact" class="btn">Contáctanos</a>
+            </div>
         </section>
-        <section id="about">
-            <h2>Sobre Nosotros</h2>
-            <p>Somos una empresa de desarrollo de software dedicada a la innovación y excelencia.</p>
+
+        <section id="about" class="section">
+            <div class="container">
+                <h2>Sobre Nosotros</h2>
+                <p>Somos una empresa de desarrollo de software dedicada a la excelencia y la innovación. Nuestro equipo está comprometido con la creación de soluciones personalizadas que impulsen tu negocio.</p>
+            </div>
         </section>
-        <section id="services">
-            <h2>Servicios</h2>
-            <ul>
-                <li>Desarrollo de Software</li>
-                <li>Consultoría Tecnológica</li>
-                <li>Mantenimiento de Sistemas</li>
-            </ul>
+
+        <section id="services" class="section">
+            <div class="container">
+                <h2>Nuestros Servicios</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Desarrollo de Software</h3>
+                        <p>Creación de aplicaciones a medida para satisfacer tus necesidades específicas.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Consultoría Tecnológica</h3>
+                        <p>Asesoramiento experto en tecnología para optimizar tus procesos y decisiones.</p>
+                    </div>
+                    <div class="service">
+                        <h3>Mantenimiento de Sistemas</h3>
+                        <p>Soporte continuo para asegurar el funcionamiento eficiente de tus sistemas.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id="projects">
-            <h2>Proyectos</h2>
-            <p>Consulta nuestros casos de éxito y proyectos anteriores.</p>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Nuestros Proyectos</h2>
+                <p>Explora algunos de nuestros proyectos destacados que han transformado negocios como el tuyo.</p>
+                <!-- Aquí podrías agregar una galería de proyectos -->
+            </div>
         </section>
-        <section id="contact">
-            <h2>Contacto</h2>
-            <form id="contact-form">
-                <label for="name">Nombre:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Mensaje:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Enviar</button>
-            </form>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contacto</h2>
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nombre:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensaje</button>
+                </form>
+            </div>
         </section>
     </main>
+
     <footer>
-        <p>&copy; 2024 Bezmi. Todos los derechos reservados.</p>
+        <div class="container">
+            <p>&copy; 2024 Bezmi. Todos los derechos reservados.</p>
+        </div>
     </footer>
+
     <script src="js/script.js"></script>
 </body>
 </html>
